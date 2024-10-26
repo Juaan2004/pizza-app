@@ -16,7 +16,7 @@ export class PizzaService {
   }
 
   getPizza(id: number): Observable<Pizza>{
-    return this.http.get<Pizza>(`${this.apiURL}/{id}`)
+    return this.http.get<Pizza>(`${this.apiURL}/${id}`)
   }
 
   addPiza(pizza: Pizza): Observable<Pizza>{
@@ -24,10 +24,10 @@ export class PizzaService {
   }
 
   updatePizza(id: number, pizza: Pizza): Observable<Pizza>{
-    return this.http.put<Pizza>(`${this.apiURL}/{id}`, pizza)
+    return this.http.put<Pizza>(`${this.apiURL}/${id}`, pizza)
   }
 
   deletePizza(id: number): Observable<void>{
-    return this.http.delete<void>(`${this.apiURL}/{id}`)
+    return this.http.delete<void>(`${this.apiURL}/${id}`)
   }
 }

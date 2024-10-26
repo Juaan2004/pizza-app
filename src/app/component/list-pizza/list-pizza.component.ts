@@ -31,7 +31,7 @@ export class ListPizzaComponent implements OnInit {
   }
   deletePizza(id: number): void {
     this.pizzaService.deletePizza(id).subscribe(() => {
-      this.pizzas = this.pizzas.filter(pizza=>pizza.id != id)
+      this.pizzas = this.pizzas.filter(pizza=>pizza.id !== id)
     })
   }
 

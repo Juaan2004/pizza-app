@@ -1,6 +1,19 @@
 {
-    "pizzas": [
-        {"id": 1, "nombre": "napolitana", "precio": 25},
-        {"id": 2, "nombre": "margarita", "precio": 22.5}
-    ]
+  "pizzas": [
+    {
+      "id": "1",
+      "nombre": "napolitana",
+      "precio": 25
+    },
+    {
+      "nombre": "napolitana",
+      "precio": 20.5,
+      "id": "2"
+    },
+    {
+      "id": "457c",
+      "nombre": "margarita",
+      "precio": 27
+    }
+  ]
 }
